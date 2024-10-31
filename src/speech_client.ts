@@ -28,7 +28,7 @@ import { CreateTemporaryApiKeyRequest } from "../proto/soniox/speech_service/Cre
 import { CreateTemporaryApiKeyResponse__Output } from "../proto/soniox/speech_service/CreateTemporaryApiKeyResponse";
 import { Timestamp__Output } from "../proto/google/protobuf/Timestamp";
 
-const PROTO_PATH = __dirname + "/speech_service.proto";
+const PROTO_PATH = require("./speech_service.proto");
 const CHUNK_SIZE = 131072; // 128kb
 const GRPC_MAX_MESSAGE_LENGTH = 6291456;
 
